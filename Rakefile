@@ -50,5 +50,5 @@ task :post, :title, :date do |t,args|
 end
 
 task :serve do
-  sh 'jekyll serve'
+  sh 'jekyll serve -w'
 end
