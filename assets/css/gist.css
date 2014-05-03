@@ -206,7 +206,7 @@
 /* keyword override */
 .gist-syntax .kd
 {
-  color:#B23AEE !important
+  color:#B23AEE !important;
   font-weight:bold
 }
 .gist-syntax .kp
@@ -240,9 +240,11 @@
 {
   color:#0086b3
 }
+
+/* resource name override */
 .gist-syntax .nc
 {
-  color:#445588;
+  color:#66FF33 !important;
   font-weight:bold
 }
 .gist-syntax .no
