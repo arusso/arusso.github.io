@@ -1,3 +1,5 @@
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 /*****************************************************************************/
 /*
 /* Common
@@ -13,7 +15,8 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
+  background-image: url(imgs/bg.jpg);
+  background-color: #CCC;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
@@ -49,7 +52,7 @@ ul.posts li {
 }
 
 ul.posts span {
-  color: #aaa;
+  color: #111;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
 }
@@ -99,10 +102,30 @@ ul.posts span {
   color: #aaa;
 }
 
+.site .nav {
+  width: 150px;
+  float: left;
+  height: 200px;
+}
+
+.site .nav ul {
+  list-style-type: none;
+}
+
+.site .home {
+
+}
+
+.site .contain-content {
+  width: 1024px;
+  border-color: #000;
+  border-width: 2px;
+}
+
 .site .footer {
   font-size: 80%;
   color: #666;
-  border-top: 4px solid #eee;
+  border-top: 4px solid #888;
   margin-top: 2em;
   overflow: hidden;
 }
