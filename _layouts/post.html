@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+{% if page.song %}<b>Song</b>: <i>{{ page.song }}</i>{% endif %}
+<p class="meta">{{ page.date | date: "%a, %b %d, %Y at %I:%M %p" }}</p>
+
+<div class="post">
+{{ content }}
+</div>
