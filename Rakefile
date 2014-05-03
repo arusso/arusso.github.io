@@ -48,3 +48,7 @@ task :post, :title, :date do |t,args|
 
   sh "vi \"#{$post_dir}#{filename}\"" if args.content == nil
 end
+
+task :serve do
+  sh 'jekyll serve'
+end
