@@ -1,8 +1,0 @@
----
-title: "test post"
-layout: post
-date: 2014-05-03 02:09:45
-comments: true
-share: true
-tags: [test post]
----
