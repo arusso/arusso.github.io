@@ -15,7 +15,6 @@ tags: [openssl,ruby,san,certificate]
   * [Including our Requirements](#including-our-requirements)
   * [Generating the Key Pair](#generating-the-key-pair)
   * [Generate the Request](#generate-the-request)
-    * [Add our Extensions](#add-our-extensions)
   * [Sign our Request](#sign-our-request)
 * [Code for this Example](#code-for-this-example)
 * [Real World Example](#real-world-example)
@@ -24,47 +23,44 @@ tags: [openssl,ruby,san,certificate]
 
 After [Heartbleed](http://heartbleed.com/), I found myself in need of replacing
 a large number of SSL keypairs, most of which included SAN certificates. Of
-course, the first thing I did was try to script the process, which resulted in
+course, the first thing I did was try to script the process which resulted in
 some bashing of my head against my desk as I stumbled through the OpenSSL Ruby
 library.
 
-But fret not, I'll try to explain it as best I can, and if you think I've made a
+But fret not, I'll try to explain it as best I can and if you think I've made a
 mistake, I'm sure you will let me know in the comments below!
 
 # Assumptions and Prerequisites
 
-I assume you are using a modern Ruby, 2.1 or greater in this case. Though older
-versions may work, I have not tested it out. Let me know in the comments if you
-find it works/doesn't for another version.
+I assume you are using a modern Ruby, version 2.1 or greater in this case.
+Though older versions may work, I have not tested any out. Let me know in the
+comments if you find another one works or doesn't.
 
-As far as external gems, the only one we will need is the `openssl-extensions`
+As for any gems we may need, the only one we pull in is the `openssl-extensions`
 gem.
 
 # Creating our Certificate Request
 
 ## Including our Requirements
 
-I may be in the minority, but I hate when people do not give me at least a basic
-idea of the require statements they needed. Since this is my article, I will do
-future me a favor:
+I may be in the minority, but I hate when I do not get the require statements I
+need as part of the post.  Since this is my article I will do future me a favor
+and provide them here. You're welcome future me.
 
 {% highlight ruby %}
 require 'openssl'
 require 'openssl-extensions/all'
 {% endhighlight %}
 
-
 ## Generating the Key Pair
 
-Now, we will generate our key pair. As you probably know, we will provide the
-public key as part of our request, signing it with the private key before
-having it signed by a real CA.
+Now we will generate our key pair. As you probably know, we need to provide the
+public key as part of our request then use the private key to sign the request.
 
 {% highlight ruby %}
-keyfile = '/tmp/mycert.key'
-
 key = OpenSSL::PKey::RSA.new 2048
 
+keyfile = '/tmp/mycert.key'
 file = File.new(keyfile,'w',0400)
 file.write(key)
 file.close
@@ -72,15 +68,15 @@ file.close
 
 ## Generate the Request
 
-Easy, right? Next up we will generate our request object. To do that, we first
-need to create our certificate subject as an `OpenSSL::X509::Name` object:
+Next up we will generate our request object. To do that, we first need to create
+our certificate subject as an `OpenSSL::X509::Name` object:
 
 {% highlight ruby %}
 subj_arr = [ ['CN', 'myhost.example.com'], [ 'DC','example'], ['DC','com']]
 subj      = OpenSSL::X509::Name.new(subj_arr)
 {% endhighlight %}
 
-Next up, we will create our request:
+Now, we create our request:
 
 {% highlight ruby %}
 request = OpenSSL::X509::Request.new
@@ -89,12 +85,9 @@ request.subject = subj
 request.public_key = key.public_key
 {% endhighlight %}
 
-
-### Add our Extensions
-
 Now that we have our request, we need to setup our extensions and add them to
-our request. This is the critical piece of this post, since our SAN values are
-one of the extensions we need to add.
+it. This is the critical piece of this post since our SAN values are one of the
+extensions we need to add.
 
 To begin, I found the following to be needed for basic SSL certificates. You may
 find different for your needs.
