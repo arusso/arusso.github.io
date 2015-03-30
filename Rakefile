@@ -40,6 +40,9 @@ task :post, :title, :date do |t,args|
     f.puts "title: \"#{post_title}\""
     f.puts "layout: post"
     f.puts "date: #{post_date}"
+    f.puts "comments: true"
+    f.puts "tags: [tag1,tag2]"
+    f.puts "share: true"
     f.puts "---"
     f.puts args.content if args.content != nil
   end
