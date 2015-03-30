@@ -216,7 +216,7 @@
 }
 .gist-syntax .kr
 {
-  color:#000000;
+  color:#FFFF00 !important;
   font-weight:bold
 }
 .gist-syntax .kt
@@ -275,7 +275,7 @@
 }
 .gist-syntax .nv
 {
-  color:teal
+  color:#00FFFF !important
 }
 .gist-syntax .ow
 {
@@ -338,7 +338,7 @@
   color:#009926
 }
 .gist-syntax .s1{
-  color:#d14
+  color:#FFFF00 !important
 }
 .gist-syntax .ss
 {
