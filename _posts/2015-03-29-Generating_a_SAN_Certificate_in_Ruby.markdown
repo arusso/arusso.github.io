@@ -2,6 +2,9 @@
 title: "Generating a SAN Certificate in Ruby"
 layout: post
 date: 2015-03-29 17:53:31
+comments: true
+share: true
+tags: [openssl,ruby,san,certificate]
 ---
 
 ## Table of Contents
