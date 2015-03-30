@@ -125,6 +125,7 @@ ef = OpenSSL::X509::ExtensionFactory
 exts.map! do |ext|
   ef.create_extension(*ext)
 end
+attrval = OpenSSL::ASN1::Set([OpenSSL::ASN1::Sequence(exts)])
 attrs = [
   OpenSSL::X509::Attribute.new('extReq',attrval),
   OpenSSL::X509::Attribute.new('msExtReq',attrval),
