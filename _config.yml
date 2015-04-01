@@ -1,5 +1,5 @@
 title:            $ brainctl view
-description:      
+description:      something witty.
 disqus_shortname: brainctl
 #Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              https://arusso.github.io
@@ -8,7 +8,9 @@ url:              https://arusso.github.io
 owner:
   name:           Aaron Russo
   avatar:         avatar.jpg
-  bio:            "Systems Engineer and Least Interesting Man in the World. "
+  bio: >
+    Husband, hockey enthusiast and Sr. Systems Engineer. Not to fear, I stopped
+    eating books a few years ago.
   email:          aaron.n.russo@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:       arusso23 
@@ -39,6 +41,9 @@ bing_verify:
 #  - title: External Link
 #    url: http://mademistakes.com
 #    external: true
+links:
+  - title: Puppet Modules
+    url: https://forge.puppetlabs.com/arusso
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Los_Angeles
