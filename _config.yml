@@ -44,6 +44,7 @@ bing_verify:
 links:
   - title: Puppet Modules
     url: https://forge.puppetlabs.com/arusso
+    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Los_Angeles
