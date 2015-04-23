@@ -103,4 +103,4 @@ So that's it. Not too bad, right? Let me know what you think below.
 
 [^1]: Technically this is SSH in a loop. Sleep well knowing I carry the burden of this terrible deed. Still, let's keep it between us and not say anything to Luke.
 [^2]: Obviously some code cannot be tested in environments; the most obvious example being types. I assume that you know this, and use something like Vagrant to develop and modify such code in a sandbox. If not, I highly suggest this approach.
-[^3]: tmux (or screen) if your friend here.
+[^3]: tmux (or screen) is your friend here.
