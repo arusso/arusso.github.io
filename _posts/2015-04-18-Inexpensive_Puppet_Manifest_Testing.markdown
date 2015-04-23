@@ -3,7 +3,7 @@ title: "Inexpensive Puppet Manifest Testing"
 layout: post
 date: 2015-04-18 21:16:02
 comments: true
-tags: [puppet,ci]
+tags: [puppet,ci,testing,bash]
 share: true
 ---
 
