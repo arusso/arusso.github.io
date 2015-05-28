@@ -3,7 +3,7 @@ title: "From RVM to rbenv (1 of 2)"
 layout: post
 date: 2015-05-27 21:25:16
 comments: true
-tags: [ruby,rvm,rbenv,bundler]
+tags: [ruby,rvm,rbenv,puppet]
 share: true
 ---
 
