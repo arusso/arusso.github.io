@@ -2,7 +2,7 @@ title:            $ brainctl view
 description:      something witty.
 disqus_shortname: brainctl
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              https://arusso.github.io
+url:              http://arusso.github.io
 
 # Owner/author information
 owner:
