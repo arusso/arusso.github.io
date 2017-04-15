@@ -12,10 +12,13 @@ share: false
 
 Well, this is awkward...
 
-I'm a Senior Systems Engineer at UC Berkeley who geeks out when people talk to him about all things tech, but especially Ruby, Puppet and git for some reason.
+I'm a Senior Systems Engineer at [Pixar](http://www.pixar.com) who geeks out
+when people talk to him about all things tech.
 
-When I'm not looking at pixels, I'm watching hockey[^1], sucking wind on the bench trying to play hockey and brewing beer.
+When I'm not looking at pixels, I'm watching hockey[^1], sucking wind on the
+bench trying to play hockey and brewing beer.
 
-Any and all opinions expressed on this site are mine and mine alone, and are in no way affiliated with my employer.
+Any and all opinions expressed on this site are mine and mine alone, and are in
+no way affiliated with my employer.
 
-[^1]: GO DUCKS!
+[^1]: GO [DUCKS](https://www.nhl.com/ducks/)!
