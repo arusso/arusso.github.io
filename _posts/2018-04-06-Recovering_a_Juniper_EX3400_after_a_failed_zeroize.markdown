@@ -3,7 +3,7 @@ title: "Recovering a Juniper EX3400 after a failed zeroize"
 layout: post
 date: 2018-04-06 19:55:40
 comments: true
-tags: [ex2300, ex4400, JunOS, Juniper, 15.1X53-D55.5, 15.1X53-D56]
+tags: [ex2300, ex3400, JunOS, Juniper, 15.1X53-D55.5, 15.1X53-D56]
 share: true
 ---
 
