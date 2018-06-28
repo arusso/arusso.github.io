@@ -14,9 +14,9 @@ the following to recover the device.
 
 First, boot into the JunOS volume manually
 
-        loader> set currdev=disk0p2
-        loader> include /boot/loader.rc
-        loader> boot
+    loader> set currdev=disk0p2
+    loader> include /boot/loader.rc
+    loader> boot
 
 Next, upgrade the firmware to 15.1X53-D56 or later. I found I couldn't proceed
 without doing this first but you're mileage may vary. In my case I used our
@@ -35,10 +35,10 @@ into issues, see the end of the article for steps you need to take to try again.
 After succesfull completion, reboot into the OAM and recover the JunOS volume
 by running:
 
-        request system reboot oam
-        # after the host boots into the OAM volume
-        request system recover junos-volume
-        request system reboot junos
+    request system reboot oam
+    # after the host boots into the OAM volume
+    request system recover junos-volume
+    request system reboot junos
 
 If everything ran successfully, you should be booted back into a working
 switch.
