@@ -5,3 +5,5 @@ _site
 codekit-config.json
 node_modules
 *.swp
+public/
+.hugo_build.lock
