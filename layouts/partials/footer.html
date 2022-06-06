@@ -1,0 +1,6 @@
+{{ if and
+  (eq .Page.Type "posts")
+  (eq .Page.Kind "page")
+}}
+  {{ template "_internal/disqus.html" . }}
+{{ end }}
