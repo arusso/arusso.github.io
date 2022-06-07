@@ -1,7 +1,6 @@
 ---
 title: "ClamAV Stream Port accept() error"
 date: 2012-01-17 16:08:00-07:00
-draft: true
 summary: Identifying and fixing SELinux misconfiguration when using ClamAV Stream Ports
 tags: [clamav,selinux]
 comments: true
