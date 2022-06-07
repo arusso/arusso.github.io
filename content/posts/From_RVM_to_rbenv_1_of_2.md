@@ -1,14 +1,15 @@
 ---
-title: "From RVM to rbenv (1 of 2)"
+title: "From RVM to rbenv"
 layout: post
 date: 2015-05-27 21:25:16
 comments: true
 tags: [ruby,rvm,rbenv,puppet]
 share: true
 summary: >
-  Migrating from RVM to rbenv (ruby management). There is no part 2.
+  Migrating from RVM to rbenv (ruby management)
 aliases:
   - /From_RVM_to_rbenv_1_of_2
+  - /From_RVM_to_rbenv
 ---
 
 * [Introduction](#introduction)
@@ -76,10 +77,6 @@ I typically activate rubies in two ways. First and foremost, when I'm switching 
 The second way I choose rubies is by setting my ruby version in the _.ruby-version_ file in my project directory. Fortunately, this does not really change and I can mostly leave it alone[^3].
 
 For more information on how rbenv chooses a ruby version, see the project's README section[^4] on the subject
-
-## Next Time
-
-The next post will dive into the differences in gemset management between RVM and rbenv, as well as some useful plugins that make rbenv a better tool all around.
 
 [^1]: https://github.com/sstephenson/rbenv
 [^2]: https://github.com/sstephenson/ruby-build
